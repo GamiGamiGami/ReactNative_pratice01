@@ -2,7 +2,8 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: { flex: 1 },
-    btnContainer: { flex:1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#F5FCFF' },
+    btnContainer: { flex:1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', backgroundColor: '#F5FCFF' },
+    panContainer: { marginLeft: 10 },
     listLine: { flex: 2, backgroundColor: 'black' },
     foxLine: { flex: 4 },
     btnLine: { flex: 2 },

@@ -46,7 +46,9 @@ class Button extends Component {
                         </Text>
                     </View>
                 </TouchableHighlight>
-                <PanDemo />
+                <View style={styles.panContainer}>
+                  <PanDemo />
+                </View>
             </View>
         );
     }
