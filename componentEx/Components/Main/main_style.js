@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     container: { flex: 1 },
     btnContainer: { flex:1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', backgroundColor: '#F5FCFF' },
     panContainer: { marginLeft: 10 },
-    listLine: { flex: 2, backgroundColor: 'black' },
+    listLine: { flex: 2 },
     foxLine: { flex: 4 },
     btnLine: { flex: 2 },
     bold: { fontWeight: 'bold' },
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFF',
         borderRadius: 10
     },
-    foxEmptyArea: { height: '84%' },
+    foxEmptyArea: { height: '80%' },
     welcome: {
         fontSize: 20,
         textAlign: 'center',
@@ -32,6 +32,34 @@ const styles = StyleSheet.create({
         width: 100,
         justifyContent: 'center'
     },
+    headingText: {
+        fontSize: 24,
+        alignSelf: 'center',
+        backgroundColor: '#FFF',
+        fontWeight: 'bold',
+        paddingLeft: 20,
+        paddingRight: 20,
+        paddingTop: 2,
+        paddingBottom: 2
+    },
+    bookItem: {
+        flexDirection: 'row',
+        backgroundColor: '#FFFFFF',
+        borderBottomColor: '#AAAAAA',
+        borderBottomWidth: 2,
+        padding: 5,
+        height: 175
+    },
+    cover: {flex: 1, height: 150, resizeMode: 'contain'},
+    info: {
+        flex:3,
+        alignItems: 'flex-end',
+        flexDirection: 'column',
+        alignSelf: 'center',
+        padding: 20
+    },
+    author: { fontSize: 18 },
+    title: { fontSize: 18, fontWeight: 'bold' },
 });
 
 export default styles;

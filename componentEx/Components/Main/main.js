@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import PressDemo from './pressDemo';
+import ListDemo from './listDemo';
 import styles from './main_style';
 
 
@@ -29,7 +30,7 @@ class main extends Component {
         return (
           <View style={styles.container}>
               <View style={styles.listLine}>
-
+                  <ListDemo />
               </View>
               <View style={styles.foxLine}>
                   <ImageBackground
