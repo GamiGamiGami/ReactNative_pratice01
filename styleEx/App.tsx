@@ -1,2 +1,2 @@
-import defaultScript from "./Component/ComponentName/StyleExample";
+import defaultScript from "./Component/Layout/Layout";
 export default defaultScript;
