@@ -10,20 +10,20 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-
 public class HelloWorldPackage implements ReactPackage {
-
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      List<NativeModule> modules = new ArrayList<>();
-      modules.add(new HelloWorldModule(reactContext));
-      return modules;
+    List<NativeModule> modules = new ArrayList<>();
+    modules.add(new HelloWorldModule(reactContext));
+    return modules;
   }
 
   @Override
-  public List<ViewManager> createViewManagers (ReactApplicationContext reactContext) {
-      return Collections.emptyList();
+  public List<Class<? extends JavaScriptModule>> createJSModules() {
+    return Collections.emptyList();
   }
 
-
+  @Override public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+    return Collections.emptyList();
+  }
 }

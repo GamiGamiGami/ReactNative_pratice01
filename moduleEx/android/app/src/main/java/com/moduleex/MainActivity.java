@@ -1,5 +1,6 @@
 package com.moduleex;
 
+import com.moduleex.helloworld.HelloWorldPackage;
 import com.facebook.react.ReactActivity;
 
 public class MainActivity extends ReactActivity {
@@ -12,4 +13,14 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "moduleEx";
   }
+
+  @Override
+  protected List<ReactPackage> getPackages() {
+     return Arrays.<ReactPackage>asList(
+         new MainReactPackage(),
+         new ReactVideoPackage(),
+         new HelloWorldPackage()
+     );
+   }
+
 }
