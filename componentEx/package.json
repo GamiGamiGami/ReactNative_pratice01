@@ -23,7 +23,7 @@
     "mem": "^5.1.1",
     "protractor": "^5.4.0",
     "typescript": "^3.4.5",
-    "ws": "^7.1.2"
+    "ws": "^7.4.6"
   },
   "private": true
 }
